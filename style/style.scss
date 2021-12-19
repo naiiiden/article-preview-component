@@ -1,0 +1,149 @@
+@import "./general";
+
+
+.container {
+    position: relative;
+    border-radius: 1em;
+    width: 18.5rem;
+    height: 27.5rem;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    .background {
+        border-radius: 12px 12px 0 0; 
+        background-image: url("../images/drawers.jpg");
+        background-size: 100%;
+        height: 37.5%;
+    }
+
+    section {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1 {
+            color: $very-dark-grayish-blue;
+            font-size: 1.1em;
+        }
+
+        p {
+            color: $desaturated-dark-blue;
+            font-size: .9em;
+        }
+
+        .avatar_name {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            .avatar {
+                width: 2.25rem;
+                border-radius: 50%;
+            }
+        }
+    
+        .name {
+            p {
+                font-weight: 700;
+                color: $very-dark-grayish-blue;
+            }
+            small {
+                color: $desaturated-dark-blue;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .share {
+                width: 19px;
+                height: 17px;
+                
+                &:hover {
+                    transform: scale(1.25);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+
+    button {
+        border: none;
+    }
+
+    .sharedisplay {
+        background-color: $very-dark-grayish-blue;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        gap: .75rem;
+        padding: .75rem 1rem;
+        bottom: 15.5%;
+        right: 13.25%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        p {
+            letter-spacing: .25rem;
+            font-size: 1em;
+        }
+
+        .socials {
+            display: flex;
+            gap: 1rem;
+
+            .social {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 2rem solid $very-dark-grayish-blue;
+        border-left: 2rem solid transparent;
+        position: absolute;
+        top: 68%;
+        right: 0%;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 40rem;
+        height: 15rem;
+        display: flex;
+
+        .background {
+            border-radius: 12px 0 0 12px;
+            height: inherit;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        section {
+            padding: 1.5rem;
+            gap: 1rem;
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        .sharedisplay {
+            right: 4.85%;
+            bottom: 27.5%;
+        }
+    }
+}
