@@ -54,7 +54,7 @@ img {
   font-size: 1.1em;
 }
 .container .text_wrapper p {
-  color: hsl(214deg, 17%, 51%);
+  color: #4D5A6A;
   font-size: 0.9em;
 }
 .container .text_wrapper .avatar_name {
@@ -105,6 +105,7 @@ img {
 .container .sharedisplay p {
   letter-spacing: 0.25rem;
   font-size: 1em;
+  color: #fff;
 }
 .container .sharedisplay .socials {
   display: flex;
