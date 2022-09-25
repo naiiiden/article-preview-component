@@ -43,46 +43,46 @@ img {
   background-size: 100%;
   height: 37.5%;
 }
-.container section {
+.container .text_wrapper {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.container section h1 {
+.container .text_wrapper h1 {
   color: hsl(217deg, 19%, 35%);
   font-size: 1.1em;
 }
-.container section p {
+.container .text_wrapper p {
   color: hsl(214deg, 17%, 51%);
   font-size: 0.9em;
 }
-.container section .avatar_name {
+.container .text_wrapper .avatar_name {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.container section .avatar_name .avatar {
+.container .text_wrapper .avatar_name .avatar {
   width: 2.25rem;
   border-radius: 50%;
 }
-.container section .name p {
+.container .text_wrapper .name p {
   font-weight: 700;
   color: hsl(217deg, 19%, 35%);
 }
-.container section .name small {
+.container .text_wrapper .name small {
   color: hsl(214deg, 17%, 51%);
 }
-.container section .row {
+.container .text_wrapper .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container section .row .share {
+.container .text_wrapper .row .share {
   width: 19px;
   height: 17px;
 }
-.container section .row .share:hover {
+.container .text_wrapper .row .share:hover {
   transform: scale(1.25);
   transition: 0.3s ease;
 }
@@ -138,11 +138,11 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .container section {
+  .container .text_wrapper {
     padding: 1.5rem;
     gap: 1rem;
   }
-  .container section h1 {
+  .container .text_wrapper h1 {
     font-size: 1.5em;
   }
   .container .sharedisplay {
